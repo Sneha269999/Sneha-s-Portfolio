@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sneha Ambhore - Portfolio</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+          body {
+              background-color: rgb(0, 0, 33);
+              color: white;
+              font-family: 'Poppins', sans-serif;
+          }
+          nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 80px;
+              padding: 0 50px;
+              background-color: rgb(18,18,62);
+          }
+          nav ul {
+              display: flex;
+              list-style: none;
+          }
+          nav ul li {
+              margin: 0 20px;
+          }
+          nav ul li a {
+              text-decoration: none;
+              color: white;
+          }
+          nav ul li a:hover {
+              color: rgb(153,153,226);
+          }
+          .container {
+              width: 90%;
+              margin: auto;
+              text-align: center;
+          }
+          .about, .skills, .projects, .contact {
+              padding: 50px 0;
+          }
+          .skills ul, .projects ul {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              list-style: none;
+              padding: 20px 0;
+          }
+          .skills ul li, .projects ul li {
+              background: #1e2167;
+              padding: 10px 20px;
+              margin: 10px;
+              border-radius: 5px;
+          }
+          .contact form {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+          }
+          .contact input, .contact textarea {
+              width: 80%;
+              padding: 10px;
+              margin: 10px 0;
+              border: none;
+              border-radius: 5px;
+          }
+          .contact button {
+              padding: 10px 20px;
+              border: none;
+              background: #9c97f1;
+              color: white;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+          footer {
+              text-align: center;
+              padding: 20px;
+              background-color: rgb(128, 0, 107);
+          }
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sneha's Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="FSE.jpeg" alt="Software Engineer" width="200" height="150">
+            <p>Hi, I'm Sneha! A passionate Software Engineer with expertise in Java, Angular, and .NET technologies. I love building web applications and solving complex problems.</p>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Angular</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+                <li>ASP.NET</li>
+                <li>Web Development</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <h2>Online Food Delivery System</h2>
+                <p>During my training at Infosys, I contributed to the Food Adda Application Project, a dynamic food delivery platform that connects 
+                    users with top restaurants and food options in the city. The application features a user-friendly interface, secure payment options, 
+                    real-time order tracking, and personalized recommendations. The team is continuously enhancing the platform to optimize performance 
+                    and deliver an exceptional user experience.</p>
+            </div>
+            <div class="project">
+                <h2>Speech Sentiment Analysis Using ML</h2>
+                <p>The project of speech sentiment using ML involves machine learning models to recognize and analyse the emotional tone of spoken language in various context the goal is to accurately identify whether a speaker's language is expressing positive,negative or neutral sentiment. This can have applications in fields such as market research, customer service and product development.
+                    The ultimate goal of speech sentiment analysis using ML is to provide options for large group of people,enabling businesses and Organizations to make more informal decisions,better understand customer need and improve In this project 
+                    we use python with machine learning and R languages product and services.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sneha Ambhore | All rights reserved</p>
+    </footer>
+</body>
+</html>
+
